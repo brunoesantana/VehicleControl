@@ -1,0 +1,13 @@
+C:\Git\TesteQuestor\VehicleControl.Data\bin\Debug\netstandard2.0\VehicleControl.Data.deps.json
+C:\Git\TesteQuestor\VehicleControl.Data\bin\Debug\netstandard2.0\VehicleControl.Data.dll
+C:\Git\TesteQuestor\VehicleControl.Data\bin\Debug\netstandard2.0\VehicleControl.Data.pdb
+C:\Git\TesteQuestor\VehicleControl.Data\bin\Debug\netstandard2.0\VehicleControl.CrossCutting.dll
+C:\Git\TesteQuestor\VehicleControl.Data\bin\Debug\netstandard2.0\VehicleControl.Domain.dll
+C:\Git\TesteQuestor\VehicleControl.Data\bin\Debug\netstandard2.0\VehicleControl.CrossCutting.pdb
+C:\Git\TesteQuestor\VehicleControl.Data\bin\Debug\netstandard2.0\VehicleControl.Domain.pdb
+C:\Git\TesteQuestor\VehicleControl.Data\obj\Debug\netstandard2.0\VehicleControl.Data.csprojAssemblyReference.cache
+C:\Git\TesteQuestor\VehicleControl.Data\obj\Debug\netstandard2.0\VehicleControl.Data.AssemblyInfoInputs.cache
+C:\Git\TesteQuestor\VehicleControl.Data\obj\Debug\netstandard2.0\VehicleControl.Data.AssemblyInfo.cs
+C:\Git\TesteQuestor\VehicleControl.Data\obj\Debug\netstandard2.0\VehicleControl.Data.csproj.CopyComplete
+C:\Git\TesteQuestor\VehicleControl.Data\obj\Debug\netstandard2.0\VehicleControl.Data.dll
+C:\Git\TesteQuestor\VehicleControl.Data\obj\Debug\netstandard2.0\VehicleControl.Data.pdb

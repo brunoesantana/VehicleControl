@@ -1,0 +1,4 @@
+C:\Git\TesteQuestor\VehicleControl.Domaiin\bin\Debug\netstandard2.0\VehicleControl.Domaiin.deps.json
+C:\Git\TesteQuestor\VehicleControl.Domaiin\bin\Debug\netstandard2.0\VehicleControl.Domaiin.dll
+C:\Git\TesteQuestor\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domaiin.AssemblyInfoInputs.cache
+C:\Git\TesteQuestor\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domaiin.AssemblyInfo.cs
