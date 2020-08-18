@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 using System.Linq;
 using VehicleControl.Business;
 using VehicleControl.Business.Interface;
@@ -49,13 +50,10 @@ namespace Services.Test
         [Test]
         public void Deve_retornar_marcas_corretamente()
         {
-            _testHelper.InsertMarca();
+            var marcaGuid = _testHelper.InsertMarca();
+            Assert.IsTrue(marcaGuid != Guid.Empty);
 
-            var list = _marcaService.GetAll(new MarcaFilter(""));
-            Assert.IsTrue(list.Any());
-
-            var marca = list.FirstOrDefault();
-            var response = _marcaService.Find(marca.Id);
+            var response = _marcaService.Find(marcaGuid);
             Assert.IsNotNull(response);
         }
 
@@ -63,10 +61,11 @@ namespace Services.Test
         public void Deve_atualizar_marcas_corretamente()
         {
             var marcaGuid = _testHelper.InsertMarca();
+            Assert.IsTrue(marcaGuid != Guid.Empty);
+
             var marca = _marcaService.Find(marcaGuid);
             var version = marca.Version;
             var dto = _testHelper.UpdateMarcaDTO(marca);
-
             var response = _marcaService.Update(MapperHelper.Map<MarcaUpdateDTO, Marca>(dto));
 
             Assert.IsTrue(response.Version > version);
@@ -82,7 +81,7 @@ namespace Services.Test
 
             _marcaService.Remove(marca.Id);
 
-            var response = _marcaService.Find(marca.Id);
+            var response = _marcaService.GetAll(new MarcaFilter("")).FirstOrDefault(f => f.Id.Equals(marca.Id));
 
             Assert.IsNull(response);
         }

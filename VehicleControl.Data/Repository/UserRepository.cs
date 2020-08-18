@@ -16,31 +16,22 @@ namespace VehicleControl.Data.Repository
 
         public User Login(string login, string password)
         {
-            using (var context = GetContext())
-            {
-                return context.Set<User>().FirstOrDefault(w => w.UserName.Equals(login) && w.Password.Equals(password));
-            }
+            return _context.Set<User>().FirstOrDefault(w => w.UserName.Equals(login) && w.Password.Equals(password));
         }
 
         public User FindByLogin(string login)
         {
-            using (var context = GetContext())
-            {
-                return context.Set<User>().FirstOrDefault(w => w.UserName.Equals(login));
-            }
+            return _context.Set<User>().FirstOrDefault(w => w.UserName.Equals(login));
         }
 
         public override List<User> GetAll(UserFilter filter)
         {
-            using (var context = GetContext())
-            {
-                var query = context.Set<User>().Where(w => w.Active);
+            var query = _context.Set<User>().Where(w => w.Active);
 
-                if (!string.IsNullOrWhiteSpace(filter.Term))
-                    query = query.Where(w => w.UserName == filter.Term);
+            if (!string.IsNullOrWhiteSpace(filter.Term))
+                query = query.Where(w => w.UserName == filter.Term);
 
-                return query.OrderBy(a => a.UserName).ToList();
-            }
+            return query.OrderBy(a => a.UserName).ToList();
         }
     }
 }

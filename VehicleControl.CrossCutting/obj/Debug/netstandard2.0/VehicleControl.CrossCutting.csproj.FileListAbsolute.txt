@@ -5,3 +5,11 @@ C:\Git\TesteQuestor\VehicleControl.CrossCutting\obj\Debug\netstandard2.0\Vehicle
 C:\Git\TesteQuestor\VehicleControl.CrossCutting\obj\Debug\netstandard2.0\VehicleControl.CrossCutting.AssemblyInfo.cs
 C:\Git\TesteQuestor\VehicleControl.CrossCutting\obj\Debug\netstandard2.0\VehicleControl.CrossCutting.dll
 C:\Git\TesteQuestor\VehicleControl.CrossCutting\obj\Debug\netstandard2.0\VehicleControl.CrossCutting.pdb
+C:\Git\VehicleControl\VehicleControl.CrossCutting\bin\Debug\netstandard2.0\VehicleControl.CrossCutting.deps.json
+C:\Git\VehicleControl\VehicleControl.CrossCutting\bin\Debug\netstandard2.0\VehicleControl.CrossCutting.dll
+C:\Git\VehicleControl\VehicleControl.CrossCutting\bin\Debug\netstandard2.0\VehicleControl.CrossCutting.pdb
+C:\Git\VehicleControl\VehicleControl.CrossCutting\obj\Debug\netstandard2.0\VehicleControl.CrossCutting.AssemblyInfoInputs.cache
+C:\Git\VehicleControl\VehicleControl.CrossCutting\obj\Debug\netstandard2.0\VehicleControl.CrossCutting.AssemblyInfo.cs
+C:\Git\VehicleControl\VehicleControl.CrossCutting\obj\Debug\netstandard2.0\VehicleControl.CrossCutting.dll
+C:\Git\VehicleControl\VehicleControl.CrossCutting\obj\Debug\netstandard2.0\VehicleControl.CrossCutting.pdb
+C:\Git\VehicleControl\VehicleControl.CrossCutting\obj\Debug\netstandard2.0\VehicleControl.CrossCutting.csprojAssemblyReference.cache

@@ -5,3 +5,11 @@ C:\Git\TesteQuestor\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleContr
 C:\Git\TesteQuestor\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domain.AssemblyInfo.cs
 C:\Git\TesteQuestor\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domain.dll
 C:\Git\TesteQuestor\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domain.pdb
+C:\Git\VehicleControl\VehicleControl.Domaiin\bin\Debug\netstandard2.0\VehicleControl.Domain.deps.json
+C:\Git\VehicleControl\VehicleControl.Domaiin\bin\Debug\netstandard2.0\VehicleControl.Domain.dll
+C:\Git\VehicleControl\VehicleControl.Domaiin\bin\Debug\netstandard2.0\VehicleControl.Domain.pdb
+C:\Git\VehicleControl\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domain.AssemblyInfoInputs.cache
+C:\Git\VehicleControl\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domain.AssemblyInfo.cs
+C:\Git\VehicleControl\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domain.dll
+C:\Git\VehicleControl\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domain.pdb
+C:\Git\VehicleControl\VehicleControl.Domaiin\obj\Debug\netstandard2.0\VehicleControl.Domain.csprojAssemblyReference.cache

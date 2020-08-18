@@ -10,6 +10,7 @@ using VehicleControl.Domain;
 
 namespace VehicleControl.Controllers
 {
+    [Route("api/v1/marcas")]
     public class MarcaController : BaseController<Marca, MarcaFilter, MarcaDTO, MarcaInsertDTO, MarcaUpdateDTO>
     {
         public MarcaController(IMarcaService marcaService) : base(marcaService)
@@ -20,8 +21,9 @@ namespace VehicleControl.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public new ActionResult GetAll([FromBody] MarcaFilter filter)
+        public ActionResult GetAll(string term)
         {
+            var filter = new MarcaFilter(term);
             return base.GetAll(filter);
         }
 

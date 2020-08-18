@@ -7489,11 +7489,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\TesteQuestor\\Services.Test\\Services.Test.csproj",
+      "projectUniqueName": "C:\\Git\\VehicleControl\\Services.Test\\Services.Test.csproj",
       "projectName": "Services.Test",
-      "projectPath": "C:\\Git\\TesteQuestor\\Services.Test\\Services.Test.csproj",
+      "projectPath": "C:\\Git\\VehicleControl\\Services.Test\\Services.Test.csproj",
       "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\TesteQuestor\\Services.Test\\obj\\",
+      "outputPath": "C:\\Git\\VehicleControl\\Services.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7509,14 +7509,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj": {
-              "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj"
+            "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj": {
+              "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj"
             },
-            "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
-              "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj"
+            "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
+              "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj"
             },
-            "C:\\Git\\TesteQuestor\\VehicleControl\\VehicleControl.csproj": {
-              "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl\\VehicleControl.csproj"
+            "C:\\Git\\VehicleControl\\VehicleControl\\VehicleControl.csproj": {
+              "projectPath": "C:\\Git\\VehicleControl\\VehicleControl\\VehicleControl.csproj"
             }
           }
         }

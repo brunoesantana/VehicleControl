@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\TesteQuestor\\Helpers.Test\\Helpers.Test.csproj": {}
+    "C:\\Git\\VehicleControl\\Helpers.Test\\Helpers.Test.csproj": {}
   },
   "projects": {
-    "C:\\Git\\TesteQuestor\\Helpers.Test\\Helpers.Test.csproj": {
+    "C:\\Git\\VehicleControl\\Helpers.Test\\Helpers.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\TesteQuestor\\Helpers.Test\\Helpers.Test.csproj",
+        "projectUniqueName": "C:\\Git\\VehicleControl\\Helpers.Test\\Helpers.Test.csproj",
         "projectName": "Helpers.Test",
-        "projectPath": "C:\\Git\\TesteQuestor\\Helpers.Test\\Helpers.Test.csproj",
+        "projectPath": "C:\\Git\\VehicleControl\\Helpers.Test\\Helpers.Test.csproj",
         "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\TesteQuestor\\Helpers.Test\\obj\\",
+        "outputPath": "C:\\Git\\VehicleControl\\Helpers.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj"
               },
-              "C:\\Git\\TesteQuestor\\VehicleControl\\VehicleControl.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl\\VehicleControl.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl\\VehicleControl.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl\\VehicleControl.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj": {
+    "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj",
+        "projectUniqueName": "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj",
         "projectName": "VehicleControl.Business",
-        "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj",
+        "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj",
         "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\TesteQuestor\\VehicleControl.Business\\obj\\",
+        "outputPath": "C:\\Git\\VehicleControl\\VehicleControl.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,14 +100,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj"
               },
-              "C:\\Git\\TesteQuestor\\VehicleControl.Data\\VehicleControl.Data.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Data\\VehicleControl.Data.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl.Data\\VehicleControl.Data.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Data\\VehicleControl.Data.csproj"
               },
-              "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj"
               }
             }
           }
@@ -142,14 +142,14 @@
         }
       }
     },
-    "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
+    "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj",
+        "projectUniqueName": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj",
         "projectName": "VehicleControl.CrossCutting",
-        "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj",
+        "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj",
         "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\obj\\",
+        "outputPath": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -213,14 +213,14 @@
         }
       }
     },
-    "C:\\Git\\TesteQuestor\\VehicleControl.Data\\VehicleControl.Data.csproj": {
+    "C:\\Git\\VehicleControl\\VehicleControl.Data\\VehicleControl.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\TesteQuestor\\VehicleControl.Data\\VehicleControl.Data.csproj",
+        "projectUniqueName": "C:\\Git\\VehicleControl\\VehicleControl.Data\\VehicleControl.Data.csproj",
         "projectName": "VehicleControl.Data",
-        "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Data\\VehicleControl.Data.csproj",
+        "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Data\\VehicleControl.Data.csproj",
         "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\TesteQuestor\\VehicleControl.Data\\obj\\",
+        "outputPath": "C:\\Git\\VehicleControl\\VehicleControl.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -236,11 +236,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj"
               },
-              "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj"
               }
             }
           }
@@ -297,14 +297,14 @@
         }
       }
     },
-    "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj": {
+    "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj",
+        "projectUniqueName": "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj",
         "projectName": "VehicleControl.Domain",
-        "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj",
+        "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj",
         "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\obj\\",
+        "outputPath": "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -356,14 +356,14 @@
         }
       }
     },
-    "C:\\Git\\TesteQuestor\\VehicleControl\\VehicleControl.csproj": {
+    "C:\\Git\\VehicleControl\\VehicleControl\\VehicleControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\TesteQuestor\\VehicleControl\\VehicleControl.csproj",
+        "projectUniqueName": "C:\\Git\\VehicleControl\\VehicleControl\\VehicleControl.csproj",
         "projectName": "VehicleControl",
-        "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl\\VehicleControl.csproj",
+        "projectPath": "C:\\Git\\VehicleControl\\VehicleControl\\VehicleControl.csproj",
         "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\TesteQuestor\\VehicleControl\\obj\\",
+        "outputPath": "C:\\Git\\VehicleControl\\VehicleControl\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -379,14 +379,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj"
               },
-              "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj"
               },
-              "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj": {
-                "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj"
+              "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj": {
+                "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Domaiin\\VehicleControl.Domain.csproj"
               }
             }
           }

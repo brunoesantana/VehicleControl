@@ -16,15 +16,12 @@ namespace VehicleControl.Data.Repository
 
         public override List<Modelo> GetAll(ModeloFilter filter)
         {
-            using (var context = GetContext())
-            {
-                var query = context.Set<Modelo>().Where(w => w.Active);
+            var query = _context.Set<Modelo>().Where(w => w.Active);
 
-                if (!string.IsNullOrWhiteSpace(filter.Term))
-                    query = query.Where(w => w.Name.Contains(filter.Term) || w.Detail.Contains(filter.Term));
+            if (!string.IsNullOrWhiteSpace(filter.Term))
+                query = query.Where(w => w.Name.Contains(filter.Term) || w.Detail.Contains(filter.Term));
 
-                return query.OrderBy(a => a.Name).ToList();
-            }
+            return query.OrderBy(a => a.Name).ToList();
         }
     }
 }

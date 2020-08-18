@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 using System.Linq;
 using VehicleControl.Business;
 using VehicleControl.Business.Interface;
@@ -49,13 +50,10 @@ namespace Services.Test
         [Test]
         public void Deve_retornar_anuncios_corretamente()
         {
-            _testHelper.InsertAnuncio();
+            var anuncioGuid = _testHelper.InsertAnuncio();
+            Assert.IsTrue(anuncioGuid != Guid.Empty);
 
-            var list = _anuncioService.GetAll(new AnuncioFilter("", null, null));
-            Assert.IsTrue(list.Any());
-
-            var anuncio = list.FirstOrDefault();
-            var response = _anuncioService.Find(anuncio.Id);
+            var response = _anuncioService.Find(anuncioGuid);
             Assert.IsNotNull(response);
         }
 
@@ -63,10 +61,11 @@ namespace Services.Test
         public void Deve_atualizar_anuncios_corretamente()
         {
             var anuncioGuid = _testHelper.InsertAnuncio();
+            Assert.IsTrue(anuncioGuid != Guid.Empty);
+
             var anuncio = _anuncioService.Find(anuncioGuid);
             var version = anuncio.Version;
             var dto = _testHelper.UpdateAnuncioDTO(anuncio);
-
             var response = _anuncioService.Update(MapperHelper.Map<AnuncioUpdateDTO, Anuncio>(dto));
 
             Assert.IsTrue(response.Version > version);
@@ -82,7 +81,7 @@ namespace Services.Test
 
             _anuncioService.Remove(anuncio.Id);
 
-            var response = _anuncioService.Find(anuncio.Id);
+            var response = _anuncioService.GetAll(new AnuncioFilter("", null, null)).FirstOrDefault(f => f.Id.Equals(anuncio.Id));
 
             Assert.IsNull(response);
         }

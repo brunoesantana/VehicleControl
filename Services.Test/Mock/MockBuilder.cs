@@ -85,10 +85,14 @@ namespace Services.Test.Mock
             return new AnuncioUpdateDTO
             {
                 Id = anuncio.Id,
+                Ano = anuncio.Ano,
                 ValorCompra = anuncio.ValorCompra,
                 ValorVenda = anuncio.ValorVenda,
                 TipoCombustivel = anuncio.TipoCombustivel,
-                Cor = anuncio.Cor
+                Cor = anuncio.Cor,
+                DataVenda = anuncio.DataVenda,
+                MarcaKey = anuncio.MarcaKey,
+                ModeloKey = anuncio.ModeloKey
             };
         }
 

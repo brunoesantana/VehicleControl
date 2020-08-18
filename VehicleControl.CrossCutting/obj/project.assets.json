@@ -1349,11 +1349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj",
+      "projectUniqueName": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj",
       "projectName": "VehicleControl.CrossCutting",
-      "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj",
+      "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\VehicleControl.CrossCutting.csproj",
       "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\TesteQuestor\\VehicleControl.CrossCutting\\obj\\",
+      "outputPath": "C:\\Git\\VehicleControl\\VehicleControl.CrossCutting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",

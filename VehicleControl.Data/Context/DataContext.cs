@@ -15,7 +15,7 @@ namespace VehicleControl.Data.Context
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseLazyLoadingProxies();
-                optionsBuilder.UseSqlServer("Server=BRUNOPC\\SQLEXPRESS;Database=vehiclecontrol;Trusted_Connection=True");
+                optionsBuilder.UseSqlServer("Server=LAPTOP-N84ID7KG\\SQLEXPRESS;Database=vehiclecontrol;Trusted_Connection=True");
             }
 
             base.OnConfiguring(optionsBuilder);

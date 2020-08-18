@@ -7488,11 +7488,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\TesteQuestor\\Helpers.Test\\Helpers.Test.csproj",
+      "projectUniqueName": "C:\\Git\\VehicleControl\\Helpers.Test\\Helpers.Test.csproj",
       "projectName": "Helpers.Test",
-      "projectPath": "C:\\Git\\TesteQuestor\\Helpers.Test\\Helpers.Test.csproj",
+      "projectPath": "C:\\Git\\VehicleControl\\Helpers.Test\\Helpers.Test.csproj",
       "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\TesteQuestor\\Helpers.Test\\obj\\",
+      "outputPath": "C:\\Git\\VehicleControl\\Helpers.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7508,11 +7508,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj": {
-              "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl.Business\\VehicleControl.Business.csproj"
+            "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj": {
+              "projectPath": "C:\\Git\\VehicleControl\\VehicleControl.Business\\VehicleControl.Business.csproj"
             },
-            "C:\\Git\\TesteQuestor\\VehicleControl\\VehicleControl.csproj": {
-              "projectPath": "C:\\Git\\TesteQuestor\\VehicleControl\\VehicleControl.csproj"
+            "C:\\Git\\VehicleControl\\VehicleControl\\VehicleControl.csproj": {
+              "projectPath": "C:\\Git\\VehicleControl\\VehicleControl\\VehicleControl.csproj"
             }
           }
         }

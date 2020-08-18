@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 using System.Linq;
 using VehicleControl.Business;
 using VehicleControl.Business.Interface;
@@ -49,13 +50,10 @@ namespace Services.Test
         [Test]
         public void Deve_retornar_modelos_corretamente()
         {
-            _testHelper.InsertModelo();
+            var modeloGuid = _testHelper.InsertModelo();
+            Assert.IsTrue(modeloGuid != Guid.Empty);
 
-            var list = _modeloService.GetAll(new ModeloFilter(""));
-            Assert.IsTrue(list.Any());
-
-            var modelo = list.FirstOrDefault();
-            var response = _modeloService.Find(modelo.Id);
+            var response = _modeloService.Find(modeloGuid);
             Assert.IsNotNull(response);
         }
 
@@ -63,10 +61,11 @@ namespace Services.Test
         public void Deve_atualizar_modelos_corretamente()
         {
             var modeloGuid = _testHelper.InsertModelo();
+            Assert.IsTrue(modeloGuid != Guid.Empty);
+
             var modelo = _modeloService.Find(modeloGuid);
             var version = modelo.Version;
             var dto = _testHelper.UpdateModeloDTO(modelo);
-
             var response = _modeloService.Update(MapperHelper.Map<ModeloUpdateDTO, Modelo>(dto));
 
             Assert.IsTrue(response.Version > version);
@@ -82,7 +81,7 @@ namespace Services.Test
 
             _modeloService.Remove(modelo.Id);
 
-            var response = _modeloService.Find(modelo.Id);
+            var response = _modeloService.GetAll(new ModeloFilter("")).FirstOrDefault(f => f.Id.Equals(modelo.Id));
 
             Assert.IsNull(response);
         }

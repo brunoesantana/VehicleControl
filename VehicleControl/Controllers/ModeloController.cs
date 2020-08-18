@@ -10,6 +10,7 @@ using VehicleControl.Domain;
 
 namespace VehicleControl.Controllers
 {
+    [Route("api/v1/modelos")]
     public class ModeloController : BaseController<Modelo, ModeloFilter, ModeloDTO, ModeloInsertDTO, ModeloUpdateDTO>
     {
         public ModeloController(IModeloService modeloService) : base(modeloService)
@@ -20,8 +21,9 @@ namespace VehicleControl.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public new ActionResult GetAll([FromBody] ModeloFilter filter)
+        public ActionResult GetAll(string term)
         {
+            var filter = new ModeloFilter(term);
             return base.GetAll(filter);
         }
 

@@ -23,8 +23,9 @@ namespace VehicleControl.Controllers
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [TokenRequestValidation]
-        public new ActionResult GetAll([FromBody] UserFilter filter)
+        public ActionResult GetAll(string term)
         {
+            var filter = new UserFilter(term);
             return base.GetAll(filter);
         }
 

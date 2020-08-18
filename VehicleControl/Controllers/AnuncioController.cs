@@ -10,6 +10,7 @@ using VehicleControl.Domain;
 
 namespace VehicleControl.Controllers
 {
+    [Route("api/v1/anuncios")]
     public class AnuncioController : BaseController<Anuncio, AnuncioFilter, AnuncioDTO, AnuncioInsertDTO, AnuncioUpdateDTO>
     {
         public AnuncioController(IAnuncioService anuncioService) : base(anuncioService)
@@ -20,8 +21,9 @@ namespace VehicleControl.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public new ActionResult GetAll([FromBody] AnuncioFilter filter)
+        public ActionResult GetAll(string term, DateTime? initialDate, DateTime? finalDate)
         {
+            var filter = new AnuncioFilter(term, initialDate, finalDate);
             return base.GetAll(filter);
         }
 

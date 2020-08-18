@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 using System.Linq;
 using VehicleControl.Business;
 using VehicleControl.Business.Interface;
@@ -51,13 +52,10 @@ namespace Services.Test
         [Test]
         public void Deve_retornar_usuarios_corretamente()
         {
-            _testHelper.InsertUser();
+            var userGuid = _testHelper.InsertUser();
+            Assert.IsTrue(userGuid != Guid.Empty);
 
-            var list = _userService.GetAll(new UserFilter());
-            Assert.IsTrue(list.Any());
-
-            var user = list.FirstOrDefault();
-            var response = _userService.Find(user.Id);
+            var response = _userService.Find(userGuid);
             Assert.IsNotNull(response);
         }
 
@@ -65,10 +63,11 @@ namespace Services.Test
         public void Deve_atualizar_usuarios_corretamente()
         {
             var userGuid = _testHelper.InsertUser();
+            Assert.IsTrue(userGuid != Guid.Empty);
+
             var user = _userService.Find(userGuid);
             var version = user.Version;
             var dto = _testHelper.UpdateUserDTO(user);
-
             var response = _userService.Update(MapperHelper.Map<UserUpdateDTO, User>(dto));
 
             Assert.IsTrue(response.Version > version);
@@ -78,13 +77,13 @@ namespace Services.Test
         public void Deve_remover_usuarios_corretamente()
         {
             var userGuid = _testHelper.InsertUser();
-            var book = _userService.Find(userGuid);
+            var user = _userService.Find(userGuid);
 
-            Assert.IsNotNull(book);
+            Assert.IsNotNull(user);
 
-            _userService.Remove(book.Id);
+            _userService.Remove(user.Id);
 
-            var response = _userService.Find(book.Id);
+            var response = _userService.GetAll(new UserFilter("")).FirstOrDefault(f => f.Id.Equals(user.Id));
 
             Assert.IsNull(response);
         }
@@ -92,9 +91,10 @@ namespace Services.Test
         [Test]
         public void Deve_logar_corretamente()
         {
-            _testHelper.InsertUser();
+            var userGuid = _testHelper.InsertUser();
+            Assert.IsTrue(userGuid != Guid.Empty);
 
-            var user = _userService.GetAll(new UserFilter()).FirstOrDefault(f => f.Active);
+            var user = _userService.Find(userGuid);
             var userResponse = _userService.Login(user.UserName, EncryptHelper.EncryptPassword(SENHA));
 
             Assert.IsNotNull(userResponse);

@@ -16,18 +16,15 @@ namespace VehicleControl.Data.Repository
 
         public override List<Anuncio> GetAll(AnuncioFilter filter)
         {
-            using (var context = GetContext())
-            {
-                var query = context.Set<Anuncio>().Where(w => w.Active);
+            var query = _context.Set<Anuncio>().Where(w => w.Active);
 
-                if (!string.IsNullOrWhiteSpace(filter.Term))
-                    query = query.Where(w => w.Cor.Contains(filter.Term) || w.Ano.ToString() == filter.Term);
+            if (!string.IsNullOrWhiteSpace(filter.Term))
+                query = query.Where(w => w.Cor.Contains(filter.Term) || w.Ano.ToString() == filter.Term);
 
-                if(filter.InitialDate.HasValue && filter.FinalDate.HasValue)
-                    query = query.Where(w => w.DataVenda >= filter.InitialDate && w.DataVenda <= filter.FinalDate);
+            if (filter.InitialDate.HasValue && filter.FinalDate.HasValue)
+                query = query.Where(w => w.DataVenda >= filter.InitialDate && w.DataVenda <= filter.FinalDate);
 
-                return query.OrderBy(a => a.Date).ToList();
-            }
+            return query.OrderBy(o => o.DataVenda).ToList();
         }
     }
 }
