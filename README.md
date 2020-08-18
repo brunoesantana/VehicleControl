@@ -5,4 +5,4 @@
 - o IIS Express está configurado na porta 53950
 - Para testar algumas funcionalidades é necessário fazer login e depois colocar o token de validação no campo "Authorize"
 
-- exemplo de url para a cessar o swagger: http://localhost:53950/swagger/index.html
+- Exemplo de url para acessar o swagger: http://localhost:53950/swagger/index.html
